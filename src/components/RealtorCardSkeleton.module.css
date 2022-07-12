@@ -1,0 +1,237 @@
+.card {
+    border-radius: 16px;
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.cardWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+    row-gap: 12px;
+}
+
+.cardWrapper>div {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.photoWrapper {
+    display: block;
+    flex: 0 0 20.83333333%;
+    max-width: 20.83333333%;
+}
+
+.infoWrapper {
+    display: block;
+    flex: 0 0 79.16666667%;
+    max-width: 79.16666667%;
+    position: relative;
+}
+
+.photoWrapper :global(.ant-skeleton) {
+    width: 100%;
+}
+
+.photoWrapper :global(.ant-skeleton-avatar) {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+.nameWrapper {
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+    margin-bottom: 8px;
+}
+
+.locationWrapper {
+    flex: 0 0 25.00000000%;
+    max-width: 25.00000000%;
+    margin-bottom: 16px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -6px;
+    margin-right: -6px;
+    row-gap: 12px;
+}
+
+.tagsItem :global(.ant-skeleton-title) {
+    margin-top: 0;
+    width: 100% !important;
+    height: 28px;
+}
+
+.tagsItem :global(.ant-skeleton-paragraph) {
+    margin: 0 !important;
+}
+
+.tags>div {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.locationWrapper :global(.ant-skeleton-title) {
+    height: 24px;
+}
+
+.nameWrapper :global(.ant-skeleton-title) {
+    height: 31px;
+}
+
+.priceWrapper :global(.ant-skeleton-title) {
+    height: 44px;
+}
+
+.realtorWrapper {
+    margin-top: 12px;
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.realtorWrapper :global(.ant-skeleton-title) {
+    height: 72px;
+}
+
+.realtorWrapper.mobile {
+    display: none;
+}
+
+@media (max-width: 1920px) {
+
+    .nameWrapper {
+        margin-bottom: 5px;
+    }
+
+    .locationWrapper {
+        margin-bottom: 7px;
+    }
+
+    .photoWrapper :global(.ant-skeleton-avatar) {
+        height: 235px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .card {
+        padding: 24px;
+    }
+
+    .realtorWrapper.desktop {
+        display: none;
+    }
+
+    .realtorWrapper.mobile {
+        margin-top: 12px;
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .photoWrapper {
+        display: block;
+        flex: 0 0 25.00000000%;
+        max-width: 25.00000000%;
+    }
+
+    .infoWrapper {
+        flex: 0 0 75.00000000%;
+        max-width: 75.00000000%;
+    }
+    
+
+}
+
+@media (max-width: 1024px) {
+
+    .infoWrapper {
+        flex: 0 0 70.83333333%;
+        max-width: 70.83333333%;
+    }
+
+    .photoWrapper {
+        flex: 0 0 29.16666667%;
+        max-width: 29.16666667%;        
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cardWrapper {
+        max-width: unset;
+    }
+
+    .photoWrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .infoWrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .priceWrapper {
+        position: relative;
+    }
+
+    .realtorWrapper.mobile :global(.ant-skeleton-title) {
+        height: 136px;
+    }
+
+    .photoWrapper :global(.ant-skeleton-avatar) {
+        height: 285px;
+    }
+
+    .bottomInfo {
+        margin-top: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .realtorWrapper.mobile {
+        display: none;
+    }
+
+    .photoWrapper :global(.ant-skeleton-avatar) {
+        height: 190px;
+    }
+
+    .tagsWrapper {
+        display: none;
+    }
+
+    .nameWrapper {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .locationWrapper {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+}

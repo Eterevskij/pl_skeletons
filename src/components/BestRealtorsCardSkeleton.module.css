@@ -1,0 +1,193 @@
+.card {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.placeInTopWrapper {
+    display: block;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.photoWrapper {
+    display: block;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.nameAndLocationWrapper {
+    display: block;
+    flex: 0 0 20.83333333%;
+    max-width: 20.83333333%;
+    align-self: baseline;
+}
+
+.tagsWrapper {
+    margin-left: 8.33333333%;
+    display: block;
+    flex: 0 0 29.16666667%;
+    max-width: 29.16666667%;
+    align-self: baseline;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -6px;
+    margin-right: -6px;
+    row-gap: 12px;
+}
+
+.tags>div {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.ratingWrapper {
+    margin-left: 20.83333333%;
+    display: block;
+    flex: 0 0 4.16666667%;
+    max-width: 4.16666667%;
+}
+
+.ratingWrapper :global(.ant-skeleton-title) {
+    width: 32px;
+    height: 32px;
+}
+
+.placeInTopWrapper :global(.ant-skeleton-title) {
+    width: 20% !important;
+    height: 20px !important;
+    margin: 0 auto;
+}
+
+.tagsItem :global(.ant-skeleton-title) {
+    margin-top: 0;
+    width: 100% !important;
+}
+
+
+.photoWrapper :global(.ant-skeleton-avatar) {
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+.tagsItem :global(.ant-skeleton-paragraph) {
+    margin: 0 !important;
+}
+
+.location {
+    margin-top: 7px;
+}
+
+.location :global(.ant-skeleton-title) {
+    width: 60%;
+}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1280px) {
+
+    .ratingWrapper {
+        display: none;
+    }
+
+    .tagsWrapper {
+        margin-left: 8.33333333%;
+        display: block;
+        flex: 0 0 50.00000000%;
+        max-width: 50.00000000%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .tagsWrapper {
+        flex: 0 0 100.00000000%;
+        max-width: 100.00000000%;
+        margin-top: 16px;
+    }
+
+    .photoWrapper {
+        margin-right: 16px;
+    }
+
+    .placeInTopWrapper :global(.ant-skeleton-title) {
+        width: 24px !important;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    .photoWrapper {
+        flex: 0 0 12.50000000%;
+        max-width: 12.50000000%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .nameAndLocationWrapper {
+        flex: 0 0 41.66666667%;
+        max-width: 41.66666667%;
+    }
+
+}
+
+@media (max-width: 564px) {
+
+    .nameAndLocationWrapper {
+        margin-left: 8.33333333%;
+    }
+
+    .placeInTopWrapper {
+        display: none;
+    }
+
+    .tagsWrapper {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .nameAndLocationWrapper {
+        margin-left: 4.16666667%;
+    }
+
+    .photoWrapper {
+        flex: 0 0 16.66666667%;
+        max-width: 16.66666667%;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .photoWrapper {
+        flex: 0 0 20.83333333%;
+        max-width: 20.83333333%;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    .photoWrapper {
+        flex: 0 0 25.00000000%;
+        max-width: 25.00000000%;
+    }
+
+}

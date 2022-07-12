@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600&display=swap');
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: inter;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.bestRealtorsSlider {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.bestRealtorsCardSkeletonWrapper {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.newAd {
+  background: #F4F4F4;
+  padding: 80px 0;
+}
+
+.RealtorCardSkeletonWrapper {
+  background: #f4f4f4;
+  padding: 32px 0;
+}
+
+.AdCartCardSkeletonWrapper {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+
+  .bestRealtorsCardSkeletonWrapper {
+      flex: 0 0 50%;
+      max-width: 50%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
